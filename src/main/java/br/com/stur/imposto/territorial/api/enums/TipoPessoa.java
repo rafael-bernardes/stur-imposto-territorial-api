@@ -1,10 +1,11 @@
 package br.com.stur.imposto.territorial.api.enums;
 
-public enum TipoContribuinte {
+public enum TipoPessoa {
 	PESSOA_FISICA(1),
-	PESSOA_JURIDICA(2);
+	PESSOA_JURIDICA(2),
+	PESSOA_RURAL(3);
 	
-	private TipoContribuinte(Integer codigo) {
+	private TipoPessoa(Integer codigo) {
 		this.codigo = codigo;
 	}
 	

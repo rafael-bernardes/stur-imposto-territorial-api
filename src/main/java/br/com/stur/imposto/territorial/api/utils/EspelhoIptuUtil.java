@@ -2,12 +2,12 @@ package br.com.stur.imposto.territorial.api.utils;
 
 import java.util.Date;
 
-import br.com.stur.imposto.territorial.api.enums.TipoContribuinte;
+import br.com.stur.imposto.territorial.api.enums.TipoPessoa;
 import br.com.stur.stur.imposto.territorial.api.entities.Contribuinte;
 import br.com.stur.stur.imposto.territorial.api.entities.EspelhoIptu;
 
 public class EspelhoIptuUtil {
-	public static EspelhoIptu gerarEspelho(TipoContribuinte tipoContribuinte, String documento) {
+	public static EspelhoIptu gerarEspelho(TipoPessoa tipoContribuinte, String documento) {
 		EspelhoIptu espelho = new EspelhoIptu();
 		
 		espelho.setAreaEdificada(new Double("79"));
@@ -27,11 +27,11 @@ public class EspelhoIptuUtil {
 		return espelho;
 	}
 
-	private static Contribuinte gerarContribuinte(TipoContribuinte tipoContribuinte, String documento) {
+	private static Contribuinte gerarContribuinte(TipoPessoa tipoContribuinte, String documento) {
 		Contribuinte contribuinte = new Contribuinte();
 		
-		if(TipoContribuinte.PESSOA_FISICA.equals(tipoContribuinte)) {
-			contribuinte.setTipoPessoa(TipoContribuinte.PESSOA_FISICA.getCodigo());
+		if(TipoPessoa.PESSOA_FISICA.equals(tipoContribuinte)) {
+			contribuinte.setTipoPessoa(TipoPessoa.PESSOA_FISICA.getCodigo());
 			contribuinte.setDocumento(documento);
 			contribuinte.setBairro("São Lourenço");
 			contribuinte.setCep("12345-678");
@@ -40,7 +40,7 @@ public class EspelhoIptuUtil {
 			contribuinte.setNome("Monteiro Lobato");
 			contribuinte.setNumero("239");
 		}else {
-			contribuinte.setTipoPessoa(TipoContribuinte.PESSOA_JURIDICA.getCodigo());
+			contribuinte.setTipoPessoa(TipoPessoa.PESSOA_JURIDICA.getCodigo());
 			contribuinte.setDocumento(documento);
 			contribuinte.setBairro("Monte Verde");
 			contribuinte.setCep("15645-678");
