@@ -1,4 +1,4 @@
-package br.com.stur.imposto.territorial.api.rest;
+package br.gov.bom_destino.stur_imposto_territorial_api.rest;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -12,9 +12,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import br.com.stur.imposto.territorial.api.enums.TipoPessoa;
-import br.com.stur.imposto.territorial.api.utils.EspelhoIptuUtil;
-import br.com.stur.stur.imposto.territorial.api.entities.EspelhoIptu;
+import br.gov.bom_destino.stur_imposto_territorial_api.entities.EspelhoIptu;
+import br.gov.bom_destino.stur_imposto_territorial_api.enums.TipoPessoa;
+import br.gov.bom_destino.stur_imposto_territorial_api.utils.EspelhoIptuUtil;
 
 @Path("espelhos")
 @Consumes(MediaType.APPLICATION_JSON)

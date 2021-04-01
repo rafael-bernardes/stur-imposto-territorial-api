@@ -1,4 +1,4 @@
-package br.com.stur.imposto.territorial.api.utils;
+package br.gov.bom_destino.stur_imposto_territorial_api.utils;
 
 import java.io.File;
 import java.io.FileInputStream;

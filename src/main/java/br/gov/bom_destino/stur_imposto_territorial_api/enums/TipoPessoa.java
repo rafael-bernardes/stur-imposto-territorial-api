@@ -1,4 +1,4 @@
-package br.com.stur.imposto.territorial.api.enums;
+package br.gov.bom_destino.stur_imposto_territorial_api.enums;
 
 public enum TipoPessoa {
 	PESSOA_FISICA(1),

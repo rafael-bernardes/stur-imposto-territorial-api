@@ -1,4 +1,4 @@
-package br.com.stur.stur.imposto.territorial.api.entities;
+package br.gov.bom_destino.stur_imposto_territorial_api.entities;
 
 public class Contribuinte {
 	private String documento;

@@ -1,10 +1,10 @@
-package br.com.stur.imposto.territorial.api.utils;
+package br.gov.bom_destino.stur_imposto_territorial_api.utils;
 
 import java.util.Date;
 
-import br.com.stur.imposto.territorial.api.enums.TipoPessoa;
-import br.com.stur.stur.imposto.territorial.api.entities.Contribuinte;
-import br.com.stur.stur.imposto.territorial.api.entities.EspelhoIptu;
+import br.gov.bom_destino.stur_imposto_territorial_api.entities.Contribuinte;
+import br.gov.bom_destino.stur_imposto_territorial_api.entities.EspelhoIptu;
+import br.gov.bom_destino.stur_imposto_territorial_api.enums.TipoPessoa;
 
 public class EspelhoIptuUtil {
 	public static EspelhoIptu gerarEspelho(TipoPessoa tipoContribuinte, String documento) {
