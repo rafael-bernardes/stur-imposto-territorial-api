@@ -40,9 +40,6 @@ public class ImpostoTerritorialResource implements Serializable {
 		case 2:
 			espelho = EspelhoIptuUtil.gerarEspelho(TipoPessoa.PESSOA_JURIDICA, documento);
 			break;
-		case 3:
-			espelho = EspelhoIptuUtil.gerarEspelho(TipoPessoa.PESSOA_RURAL, documento);
-			break;
 		default:
 			espelho = new EspelhoIptu();
 			break;
